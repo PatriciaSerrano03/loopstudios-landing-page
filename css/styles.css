@@ -1,0 +1,130 @@
+/* font-family: "Josefin Sans", sans-serif; */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body {
+}
+
+/* Header */
+
+.header {
+  height: 650px;
+  background-image: url(../Material/img/mobile/image-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Nav */
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.nav_info {
+  font-family: "Alata", serif;
+  display: flex;
+  justify-content: space-around;
+}
+.nav_mobile {
+  display: block;
+}
+.nav_list {
+  display: none;
+}
+
+/* First Title */
+
+.header_text {
+  width: 327px;
+  border: 2px solid white;
+  margin: 80px;
+  padding: 20px;
+}
+.text_h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  color: white;
+  font-style: thin;
+  font-weight: 300;
+  line-height: 60px;
+}
+
+@media screen and (width>=768px) {
+  .header {
+    background-image: url(../Material/img/desktop/image-hero.jpg);
+  }
+  .nav_mobile {
+    display: none;
+  }
+  .nav_list {
+    display: flex;
+    width: 468px;
+    margin-right: 50px;
+    justify-content: space-between;
+    color: white;
+  }
+  .nav_list .nav_info:hover a {
+    border-bottom: 2px solid white;
+  }
+  .header_text {
+    width: 500px;
+  }
+}
+
+/* Main */
+.main {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 20px;
+}
+
+/* The leader in interactive vr */
+
+.interactive {
+  text-align: center;
+  padding-inline: 10px;
+  margin-top: 70px;
+}
+
+.interactive_info {
+  background-color: white;
+  margin: 20px;
+  padding: 30px;
+}
+.interactive_info_title {
+  margin-bottom: 20px;
+}
+
+@media screen and (width>=768px) {
+  .interactive {
+    position: relative;
+  }
+  .interactive_info {
+    position: absolute;
+    width: 541px;
+    height: 208px;
+    top: 300px;
+    right: 100px;
+  }
+}
