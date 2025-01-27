@@ -128,3 +128,147 @@ body {
     right: 100px;
   }
 }
+
+/* Our Creations */
+
+.creation {
+  padding-top: 120px;
+}
+.text_h2 {
+  font-family: "Josefin Sans", serif;
+  font-size: 32px;
+  font-weight: 300;
+  padding-bottom: 40px;
+}
+
+.creation_item {
+  position: relative;
+  margin-bottom: 24px;
+  width: fit-content;
+  height: fit-content;
+  background-image: linear-gradient(
+    to right,
+    rgba(19, 19, 19, 0.6),
+    transparent
+  );
+}
+
+.creation_item_img {
+  position: relative;
+  z-index: -1;
+}
+.creation_item_img_laptop {
+  display: none;
+}
+
+.text_h3 {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  font-family: "Josefin Sans", serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+  max-width: 10ch;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.text_h3_small {
+  max-width: 6ch;
+}
+
+.button {
+  background-color: white;
+  padding: 13px 43px;
+  border: 1px solid black;
+  font-family: "Alata", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 5px;
+}
+
+.button_box {
+  text-align: center;
+  margin-bottom: 96px;
+}
+
+@media screen and (width>=768px) {
+  .creation_content,
+  .creation_item_img_laptop {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+  }
+  .creation_item {
+    margin: 5px;
+  }
+  .creation_item_img {
+    display: none;
+  }
+  .creation_item_img_laptop {
+    width: 236px;
+    height: 422px;
+    position: relative;
+    z-index: -1;
+  }
+}
+
+/* Footer */
+
+.footer {
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 52px;
+}
+
+.footer_logo {
+  width: 144px;
+  margin-bottom: 32px;
+}
+
+.footer_link {
+  color: white;
+  padding-block: 10px;
+}
+
+.footer_copyright {
+  font-family: "Alata", serif;
+  padding-top: 20px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+.social {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.social_img {
+  padding: 48px 8px 0;
+}
+
+@media screen and (width>=768px) {
+  .creation_content,
+  .creation_item_img_laptop {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+  }
+  .creation_item {
+    margin: 5px;
+  }
+  .creation_item_img {
+    display: none;
+  }
+  .creation_item_img_laptop {
+    width: 236px;
+    height: 422px;
+    position: relative;
+    z-index: -1;
+  }
+}
