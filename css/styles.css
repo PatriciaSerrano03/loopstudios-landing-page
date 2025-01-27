@@ -20,8 +20,8 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-body {
-}
+/* body {
+} */
 
 /* Header */
 
@@ -43,7 +43,7 @@ body {
 }
 
 .nav_info {
-  font-family: "Alata", serif;
+  font-family: 'Alata', serif;
   display: flex;
   justify-content: space-around;
 }
@@ -63,7 +63,7 @@ body {
   padding: 20px;
 }
 .text_h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 40px;
   color: white;
   font-style: thin;
@@ -95,7 +95,7 @@ body {
 
 /* Main */
 .main {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   margin: 20px;
 }
 
@@ -119,6 +119,10 @@ body {
 @media screen and (width>=768px) {
   .interactive {
     position: relative;
+  }
+  .interactive_img {
+    position: absolute;
+    left: 100px;
   }
   .interactive_info {
     position: absolute;
